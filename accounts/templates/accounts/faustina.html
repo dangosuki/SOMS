@@ -58,6 +58,7 @@
             
         <table class="table table-sm">
             <tr>
+                <th>Name</th>
                 <th>Offense</th>
                 <th>Category</th>
                 <th>Note</th>
@@ -69,6 +70,7 @@
 
             {% for offense in offenses %}
                 <tr>
+                    <td>{{offense.name}}</td>
                     <td>{{offense.offense}}</td>
                     <td>{{offense.category}}</td>
                     <td>{{offense.note}}</td>
