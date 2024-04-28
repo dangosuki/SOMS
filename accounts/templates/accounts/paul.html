@@ -58,22 +58,27 @@
             
         <table class="table table-sm">
             <tr>
+                <th>Name</th>
                 <th>Offense</th>
                 <th>Category</th>
                 <th>Note</th>
                 <th>Action Given</th>
                 <th>Date Committed</th>
-
+                <!--<th>Update</th>
+                <th>Remove</th>-->
             </tr>
 
             {% for offense in offenses %}
                 <tr>
+                    <td>{{offense.name}}</td>
                     <td>{{offense.offense}}</td>
                     <td>{{offense.category}}</td>
                     <td>{{offense.note}}</td>
                     <td>{{offense.action_given}}</td>
                     <td>{{offense.date_created}}</td>
+                    <!--<td><a class="btn btn-sm btn-info" href="{% url 'anthonyupdate_offense' offense.id %}">Update</a></td>
 
+                    <td><a class="btn btn-sm btn-danger" href="{% url 'anthonydelete_offense' offense.id %}">Delete</a></td>-->
                 </tr>
             {% endfor %}
 
