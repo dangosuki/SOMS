@@ -14,7 +14,7 @@
             <form action="{% url 'teresadelete_offense' item.id %}" method="POST">
     
                 {% csrf_token %}
-                <a class= "btn btn-warning" href="{% url '/' %}">Cancel</a>
+                <a class= "btn btn-warning" href="{% url 'teresa' %}">Cancel</a>
     
                 <input class= "btn btn-danger" type="submit" name="Confirm">
             </form>
